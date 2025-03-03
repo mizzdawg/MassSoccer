@@ -1,0 +1,350 @@
+/* Universal box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default styles for list items */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Normalize heading and paragraph margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+/* Set a consistent background-color and font family */
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Set a default width for images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove default table border spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Normalize form elements */
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+header.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #0D274C;
+    z-index: 5;
+}
+
+nav {
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+svg.nav-icon {
+    padding: 6px;
+    width: 40px;
+    fill: #fff;
+}
+
+.nav-logo-container a {
+    line-height: 0;
+}
+
+.nav-logo {
+    width: 50px;
+}
+
+.nav-pop-menu-container {
+    display: none;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.nav-pop-menu-overlay {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0 0 0 / .7);
+    z-index: 0;
+}
+
+.menu-active {
+    display: block;
+}
+
+.nav-pop-menu {
+    position: relative;
+    width: 280px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #fff;
+    height: 100%;
+    z-index: 5;
+}
+
+.nav-pop-menu-navigation-right {
+    position: fixed;
+    right: 0;
+}
+
+.nav-menu-pop-link a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(33, 39, 42);
+}
+
+.nav-menu-link-icon {
+    width: 22px;
+}
+
+.nav-menu-pop-link a span {
+    font-size: 15px;
+    line-height: 23px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.nav-pop-menu hr {
+    border: 0;
+    border-bottom: 1px solid #d6d6d6;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.nav-menu-pop-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+}
+
+.nav-menu-pop-header-text {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    color: rgba(87 111 118 / 1);
+    text-transform: uppercase;
+}
+
+.nav-menu-pop-header-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.icon-rotate {
+    transform: rotate(180deg);
+}
+
+.nav-menu-pop-sub-link {
+    display: flex;
+    gap: 8px;
+    padding-top: 4px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    font-size: 15px;
+}
+
+.sub-list-inactive {
+    display: none;
+}
+
+.mobile-link-logo {
+    width: 22px;
+}
+
+
+/* Account Flyout CSS */
+.nav-menu-manage-account-container {
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 16px;
+}
+
+.nav-menu-pop-account-header-text {
+    font-size: 13px;
+    font-weight: 700;
+    ;
+}
+
+.nav-menu-manage-account-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #0D274C;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-menu-manage-acount-icon {
+    width: 22px;
+}
+
+.nav-menu-id-card {
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+}
+
+.nav-menu-id-item {
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.nav-menu-id-item span {
+    font-weight: 700;
+}
+
+/* main content CSS */
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f1f1f1;
+}
+
+.main-ad-container {
+    width: 100%;
+    max-width: 1500px;
+    padding-block: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.main-ad-container img {
+    width: 100%;
+    line-height: 0;
+}
+
+.main-container-news {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-container-top-story-info {
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+.main-container-top-story-text {
+    padding-block: 8px;
+    font-size: 14px;
+}
+
+.main-container-top-story-header {
+    font-family: 'Robot', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.5px;
+}
+
+.main-container-headlines {
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+.main-container-headlines li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-block: 7px;
+    border-bottom: 1px solid #dedede;
+    font-size: 13px;
+}
+
+.main-container-headlines li:last-of-type {
+    border: none;
+}
+
+.main-container-headlines-header span {
+    font-weight: 700;
+}
+
+.main-container-headline img {
+    width: 20px;
+}
+
+.main-container-headline span {
+    font-weight: 500;
+}
