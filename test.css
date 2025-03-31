@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #101828;
+    background-color: #f9fafb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(13, 39, 76);
+    margin-bottom: 25px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0 10px;
+}
+
+.main-header {
+    width: 100%;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.main-header h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1000px;
+}
+
+article {
+    flex-grow: 1;
+    min-height: 1000px;
+    padding: 24px;
+    border: 1px solid #f3f4f6;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.main-header h1 {
+    margin-block: 0;
+}
+
+.divisions-section-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.divisions-section-header-container h3 {
+    margin-block: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/* CSS for divisions list (My Divisions and All Divisions) */
+
+.divisions-list {
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 32px;
+    padding-left: 0;
+}
+
+.my-division {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.my-division:last-of-type {
+    border-bottom: none;
+}
+
+.my-division a {
+    width: 100%;
+    padding-block: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #101828;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.my-division a:hover {
+    background-color: #f9fafb;
+}
+
+.my-division a:visited {
+    color: #101828;
+}
+
+.division-name-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.division-name-container img {
+    width: 48px;
+}
+
+.division-name-main {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.division-name-sub {
+    font-size: 12px;
+    line-height: 20px;
+    color: #6a7282;
+}
+
+.division-view {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.division-view-text {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.division-view-chevron {
+    fill: #99a1af;
+    width: 14px;
+}
+
+
+/* Division list CSS */
+
+
+.division-list-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divisions-list-header {
+    display: flex;
+}
+
+.divisions-list-header h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: 4px;
+    margin-block: 0;
+}
+
+#division-select {
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+    padding-top: 8px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(13, 39, 76);
+    position: relative;
+}
+
+.division-header-container {
+    width: 100%;
+    text-align: center;
+}
+
+.division-header-container h4 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.division-sides-container {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+
+.division-side {
+    flex: 1;
+}
+
+
+
+
+/* Aside news panel css */
+
+aside {
+    width: 275px;
+    padding: 24px 8px;
+    height: auto;
+    margin-left: 20px;
+    border: 1px solid rgba(225 227 225 / 1);
+    border-radius: 10px;
+}
+
+.aside-header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(225 227 225 / 1);
+    cursor: default;
+}
+
+.aside-header-container svg {
+    fill: rgba(31 31 31 /1);
+    width: 24px;
+}
+
+.aside-header-container h3 {
+    margin-block: 0;
+    margin-left: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+aside ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+aside ul li {
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 19.5px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 1px solid rgba(225 227 225 / 1);
+}
+
+aside ul li:last-of-type {
+    border: none;
+}
+
+.news-item-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-block: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.news-item-link img {
+    width: 20px;
+    margin-right: 8px;
+}
