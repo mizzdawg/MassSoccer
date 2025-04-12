@@ -43,7 +43,7 @@ main {
 }
 
 @media (max-width: 768px) {
-    .section-header-dropdown-containers{
+    .section-header-dropdown-containers {
         flex-direction: column
     }
 }
@@ -115,6 +115,82 @@ main {
     line-height: 24px;
 }
 
+.section-header-profile-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header-profile-info {
+    display: flex;
+    gap: 15px;
+}
+
+.section-header-profile-img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.section-header-profile-name {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.section-header-profile-title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #6a7282;
+}
+
+.section-header-profile-contact {
+    padding: 8px 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    background-color: #0D274C;
+}
+
+@media (max-width: 425px) {
+    .section-header-profile-img {
+        width: 40px;
+    }
+
+    .section-header-profile-name {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .section-header-profile-title {
+        font-size: 12px;
+    }
+
+    .section-header-profile-contact {
+        padding: 8px 12px;
+    }
+
+}
+
+.section-announcement-container {
+    margin-block: 20px;
+    padding: 16px;
+    display: flex;
+    gap: 8px;
+    background-color: rgba(211 227 253 / 1);
+    border-radius: 6px;
+    border: 1px solid #BDCCE3;
+}
+
+.section-announcement-text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
 .division-standings-header {
     margin-top: 12px;
     font-size: 18px;
@@ -128,14 +204,19 @@ main {
     margin-bottom: 16px;
 }
 
-.division-standings-table {
+.division-standings-table,
+.division-cards-table {
+    /* shared with Cards table */
     width: 100%;
+    min-width: 500px;
     border-collapse: collapse;
     border-spacing: 0;
     color: rgb(31, 31, 31);
 }
 
-.division-standings-table thead tr {
+.division-standings-table thead tr,
+.division-cards-table thead tr {
+    /* shared with Cards table */
     display: flex;
     align-items: center;
     height: 56px;
@@ -171,7 +252,9 @@ main {
     flex: 1;
 }
 
-.division-standings-table tbody tr {
+.division-standings-table tbody tr,
+.division-cards-table tbody tr {
+    /* shared with Cards table */
     display: flex;
     align-items: center;
     height: 56px;
@@ -322,6 +405,66 @@ main {
     }
 }
 
+/* Cards table CSS */
+.cards-table-header,
+.cards-table-header-large {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 52px;
+    flex: 1;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.cards-table-header-large {
+    flex: 2;
+}
+
+.division-cards-table tbody tr {
+    height: 40px;
+}
+
+
+.red-card-row {
+    background-color: #f9e5e5;
+}
+
+.double-yellow-card-row {
+    background-color: #fffbe8;
+}
+
+.cards-table-cell,
+.cards-table-cell-large {
+    display: flex;
+    flex: 1;
+    min-width: 52px;
+    justify-content: flex-start;
+    gap: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.cards-table-cell-large {
+    flex: 2;
+}
+
+.red-card {
+    height: 20px;
+    width: 14px;
+    background-color: #b70000;
+    border: 1px solid #191602;
+    border-radius: 4px;
+}
+
+.yellow-card {
+    height: 20px;
+    width: 14px;
+    background-color: #ffde1a;
+    border: 1px solid #191602;
+    border-radius: 4px;
+}
+
 
 /* SCHEDULE CSS */
 .match-list-container {
@@ -388,7 +531,7 @@ main {
     margin-right: 5px;
 }
 
-.match-time, 
+.match-time,
 .match-score {
     position: absolute;
     left: 0;
